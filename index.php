@@ -157,7 +157,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-cache-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CEFFFF;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-buffers">0</span>MB<br /><small class="label">BUFFERS</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-buffers">0</span>MB<br /><small class="label">BUFFERS</small></div>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-real-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CDFD9F;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-real-free">0</span>MB<br /><small class="label">FREE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-real-free">0</span>MB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +185,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-swap-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CCCDFC;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-swap-free">0</span>MB<br /><small class="label">FREE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-swap-free">0</span>MB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="disk-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#9BCEFD;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="disk-free">0</span>GB<br /><small class="label">FREE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="disk-free">0</span>GB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
                         </div>
