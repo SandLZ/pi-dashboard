@@ -18,6 +18,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
     <script src="assets/jquery-3.1.1.min.js"></script>
     <script src="assets/highcharts.js"></script>
     <script src="assets/highcharts-more.js"></script>
+    
     <script src="assets/solid-gauge.js"></script>
     <script src="assets/exporting.js"></script>
     <script src="assets/bootstrap.min.js"></script>
