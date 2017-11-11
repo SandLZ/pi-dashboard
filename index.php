@@ -18,7 +18,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
     <script src="assets/jquery-3.1.1.min.js"></script>
     <script src="assets/highcharts.js"></script>
     <script src="assets/highcharts-more.js"></script>
-    
+
     <script src="assets/solid-gauge.js"></script>
     <script src="assets/exporting.js"></script>
     <script src="assets/bootstrap.min.js"></script>
@@ -79,7 +79,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-6 col-sm-6">
                         <div id="container-cpu" style="width: 100%; height: 200px;"></div>
                         <div style="height: 200px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CDFD9F;"><strong><small>CPU</small></strong></div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0; background-color:#FFFECD;"><span id="cpu-freq" style="font-weight: bolder;"><?php echo($D['cpu']['freq']/1000) ?></span><br /><small class="label">MHz</small></div>
@@ -120,7 +120,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-6 col-sm-6">
                         <div id="container-mem" style="width: 100%; height: 200px;"></div>
                         <div style="height: 200px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CDFD9F;"><strong><small>MEMORY</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-percent">0</span>%<br /><small class="label">USED</small></div>
