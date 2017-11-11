@@ -76,6 +76,10 @@ $(document).ready(function () {
 
   var chartCPU = Highcharts.chart('container-cpu',
     Highcharts.merge(gaugeOptions, {
+      chart: {
+        type: 'solidgauge',
+        backgroundColor: '#30343e',
+      },
       yAxis: {
         min: 0,
         max: 100,
