@@ -140,7 +140,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="loadavg-10m">0.0</span><br /><small class="label">AVG.10M</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color: #FFFDCF;"><strong><span id="loadavg-running">0</span>/<span id="loadavg-threads">0</span></strong><br /><small class="label">RUNNING</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color: #FFFDCF;border-bottom-right-radius:10px"><strong><span id="loadavg-running">0</span>/<span id="loadavg-threads">0</span></strong><br /><small class="label">RUNNING</small></div>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-cache" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CEFFFF;"><strong><small>CACHE</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-cache-percent">0</span>%<br /><small class="label">USED</small></div>
@@ -165,7 +165,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-mem-real" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CDFD9F;"><strong><small>REAL MEMORY</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-real-percent">0</span>%<br /><small class="label">USED</small></div>
@@ -179,7 +179,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-swap" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CCCDFC;"><strong><small>SWAP</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-swap-percent">0</span>%<br /><small class="label">USED</small></div>
@@ -193,7 +193,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-disk" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row" style="margin: 0; background-color:#E0E0E0;">
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
                                 <div class="text-center" style="padding: 2px 0 2px 0; background-color: #9BCEFD;"><strong><small>DISK</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="disk-percent">0</span>%<br /><small class="label">USED</small></div>
