@@ -32,7 +32,7 @@ $(document).ready(function() {
             startAngle: -90,
             endAngle: 90,
             background: {
-                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#FFFFFF',
+                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#30343e',
                 innerRadius: '60%',
                 outerRadius: '100%',
                 shape: 'arc'
