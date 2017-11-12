@@ -152,7 +152,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-cache" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row right-bottom-boder blue" style="margin: 0; ">
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0; ">
                                 <div class="text-center" style="padding: 2px 0 2px 0;"><strong><small>CACHE</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-cache-percent">0</span>%<br /><small class="label">USED</small></div>
@@ -180,12 +180,12 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-swap" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CCCDFC;"><strong><small>SWAP</small></strong></div>
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0;">
+                                <div class="text-center" style="padding: 2px 0 2px 0; "><strong><small>SWAP</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-swap-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CCCDFC;border-bottom-right-radius:10px">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;border-bottom-right-radius:10px">
                                     <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-swap-free">0</span>MB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
@@ -194,12 +194,12 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-disk" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #9BCEFD;"><strong><small>DISK</small></strong></div>
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0;">
+                                <div class="text-center" style="padding: 2px 0 2px 0;"><strong><small>DISK</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="disk-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#9BCEFD;border-bottom-right-radius:10px">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;border-bottom-right-radius:10px">
                                     <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="disk-free">0</span>GB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
