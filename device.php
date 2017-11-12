@@ -33,12 +33,9 @@ $D['os'] = explode(" ", php_uname());
 $D['home_temp'] = 0;
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
-    ChromePhp::log($str);
     if (!empty($str)) {
         $D['home_temp'] = 2;
         $secondLine = explode('\n', $str);
-        ChromePhp::log($secondLine);
-        ChromePhp::log(count($secondLine));
         if (count($secondLine) > 0) {
             $D['home_temp'] = 3;
             $temperatureData = explode(' ', $secondLine[1]);
