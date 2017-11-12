@@ -65,7 +65,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
             <div class="col-md-3">
                 <div style="text-align: center; padding: 20px 0;"><img src="assets/devices/<?php echo($D['model']['id']) ?>.png" /></div>
                 <div class="left-container">
-                    <div class="text-center left-text" style="margin:20px; padding: 10px 0 10px 0; background-color:#CEFCA3; border-radius: 3px;"><div class="label">室温</div><div id="hostip" style="color: white;font-size: 150%; font-weight: bolder;"><?php echo($D['home_temp']); ?>&#176;</div></div>
+                    <div class="text-center left-text" style="margin:20px; padding: 10px 0 10px 0; background-color:#CEFCA3; border-radius: 3px;"><div class="label">室温</div><div id="hostip" style="color: white;font-size: 150%; font-weight: bolder;"><?php echo($D['home_temp']); ?>&nbsp;&#176;C</div></div>
                     <div class="text-center left-text" style="margin:20px; padding: 10px 0 10px 0; background-color:#CEFCA3; border-radius: 3px;"><div class="label">IP</div><div id="hostip" style="color: white;font-size: 150%; font-weight: bolder;"><?php echo($D['hostip']); ?></div></div>
                     <div class="text-center left-text" style="margin:20px; padding: 10px 0 10px 0; background-color:#9DCFFB; border-radius: 3px;"><div class="label">时间</div><div id="time" style="color: white;font-size: 150%; font-weight: bolder;">00:00</div><div id="date">-</div></div>
                     <div class="text-center left-text" style="margin:20px; padding: 10px 0 10px 0; background-color:#FFFECD; border-radius: 3px;"><div class="label">已运行</div><div id="uptime" style="color: white;font-size: 120%; font-weight: bolder;">0</div></div>
