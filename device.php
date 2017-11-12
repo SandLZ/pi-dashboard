@@ -36,8 +36,6 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     if (!empty($str)) {
         $D['home_temp'] = 2;
         ChromePhp::log($str);
-        $str = preg_split('/[\n]+/s', $str);
-        ChromePhp::log($str);
         if (count($str) > 0) {
             $D['home_temp'] = 3;
             ChromePhp::log($str);
@@ -45,7 +43,7 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
             ChromePhp::log($str);
             if (count($str)>9) {
                 $D['home_temp'] = 4;
-                $str = floatval(substr($str[10],2));
+                $str = floatval(substr($str[9],2));
                 $str = $str / 1000;
                 print_r($str);
                 $D['home_temp'] = $str;
