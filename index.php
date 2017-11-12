@@ -80,37 +80,37 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-6 col-sm-6">
                         <div id="container-cpu" style="width: 100%; height: 200px;"></div>
                         <div style="height: 200px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#30343e;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #32414e;"><strong style="color: white"><small>CPU</small></strong></div>
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0;">
+                                <div class="text-center" style="padding: 2px 0 2px 0;"><strong style="color: white"><small>CPU</small></strong></div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-freq" style="font-weight: bolder;color: white"><?php echo($D['cpu']['freq']/1000) ?></span><br /><small class="label">MHz</small></div>
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;color: white"><span id="cpu-count"><?php echo($D['cpu']['count']) ?></span><br /><small class="label">CORE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-freq" style="font-weight: bolder;color: white"><?php echo($D['cpu']['freq']/1000) ?></span><br /><small class="label">MHz</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white;"><span id="cpu-temp" style="font-weight: bolder;color: white">0</span><br /><small class="label">C°</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-count"><?php echo($D['cpu']['count']) ?></span><br /><small class="label">CORE</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white;"><span id="cpu-stat-idl" style="color: white;">0</span>%<br /><small class="label">IDEL</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-temp" style="font-weight: bolder;color: white">0</span><br /><small class="label">C°</small></div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-idl" style="color: white;">0</span>%<br /><small class="label">IDEL</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-use" style="color: white;">0</span>%<br /><small class="label">USER</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-use" style="color: white;">0</span>%<br /><small class="label">USER</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-sys" style="color: white;">0</span>%<br /><small class="label">SYS</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-sys" style="color: white;">0</span>%<br /><small class="label">SYS</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-nic" style="color: white;">0</span>%<br /><small class="label">NICE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-nic" style="color: white;">0</span>%<br /><small class="label">NICE</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-iow" style="color: white;">0</span>%<br /><small class="label">IOW</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; "><span id="cpu-stat-iow" style="color: white;">0</span>%<br /><small class="label">IOW</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-irq" style="color: white;">0</span>%<br /><small class="label">IRQ</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-irq" style="color: white;">0</span>%<br /><small class="label">IRQ</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;color: white"><span id="cpu-stat-sirq" style="color: white;">0</span>%<br /><small class="label">SIRQ</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-stat-sirq" style="color: white;">0</span>%<br /><small class="label">SIRQ</small></div>
                                 </div>
                                 <div class="col-md-12" style="min-height: 52px;">
                                     <div class="text-center" style="padding: 10px 0 10px 0; margin: auto 0;"><span id="cpu-model" class="label"><?php echo($D['cpu']['model']) ?></span>&nbsp;</div>
@@ -121,27 +121,27 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-6 col-sm-6">
                         <div id="container-mem" style="width: 100%; height: 200px;"></div>
                         <div style="height: 200px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #32414e;color: white"><strong><small>MEMORY</small></strong></div>
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0;">
+                                <div class="text-center" style="padding: 2px 0 2px 0;"><strong><small>MEMORY</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;background-color: #30343e;color: white"><span id="mem-percent">0</span>%<br /><small class="label">USED</small></div>
-                                    <div class="text-center" style="padding: 10px 0 10px 0;background-color: #30343e;color: white"><span id="mem-free">0</span>MB<br /><small class="label">FREE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-percent">0</span>%<br /><small class="label">USED</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-free">0</span>MB<br /><small class="label">FREE</small></div>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color: #30343e;color: white"><span id="mem-cached">0</span>MB<br /><small class="label">CACHED</small></div>
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color: #30343e;color: white"><span id="mem-swap-total">0</span>MB<br /><small class="label">SWAP</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; "><span id="mem-cached">0</span>MB<br /><small class="label">CACHED</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; "><span id="mem-swap-total">0</span>MB<br /><small class="label">SWAP</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;background-color: #30343e;color: white"><span id="loadavg-1m">0.0</span><br /><small class="label">AVG.1M</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="loadavg-1m">0.0</span><br /><small class="label">AVG.1M</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;background-color: #30343e;color: white"><span id="loadavg-5m">0.0</span><br /><small class="label">AVG.5M</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="loadavg-5m">0.0</span><br /><small class="label">AVG.5M</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;background-color: #30343e;color: white"><span id="loadavg-10m">0.0</span><br /><small class="label">AVG.10M</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="loadavg-10m">0.0</span><br /><small class="label">AVG.10M</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color: #30343e;color: white;border-bottom-right-radius:10px"><strong><span id="loadavg-running">0</span>/<span id="loadavg-threads">0</span></strong><br /><small class="label">RUNNING</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; ;border-bottom-right-radius:10px"><strong><span id="loadavg-running">0</span>/<span id="loadavg-threads">0</span></strong><br /><small class="label">RUNNING</small></div>
                                 </div>
                             </div>
                         </div>

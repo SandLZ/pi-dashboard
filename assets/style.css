@@ -19,3 +19,8 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+/* 定义灰蓝色 */
+.grey-blue-theme {
+    background-color: #30343e;
+    color: white;
+}
