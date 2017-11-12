@@ -31,21 +31,20 @@ $D['os'] = explode(" ", php_uname());
 
 // DS18B20
 $D['home_temp'] = 0;
-$secondLine = [];
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
     if (!empty($str)) {
         $D['home_temp'] = 2;
-        $secondLine = explode('\n', $str);
-        if (count($secondLine) > 0) {
+        $str = explode('\n', $str);
+        if (count($str) > 0) {
             $D['home_temp'] = 3;
-            $temperatureData = explode(' ', $secondLine[1]);
-            ChromePhp::log($temperatureData);
-            if (count($temperatureData)>9) {
+            $str = explode(' ', $str[1]);
+            ChromePhp::log($str);
+            if (count($str)>9) {
                 $D['home_temp'] = 4;
-                $temperature = float($temperatureData[9]);
-                $temperature = $temperature / 1000;
-                $D['home_temp'] = $temperature;
+                $str = float($str[9]);
+                $str = $str / 1000;
+                $D['home_temp'] = $str;
             }
         }
     }
