@@ -17,7 +17,6 @@ $(document).ready(function () {
       },
     },
   });
-  Highcharts.theme.contrastTextColor = 'white';
 
   var gaugeOptions = {
 
@@ -96,7 +95,7 @@ $(document).ready(function () {
           dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:28px;color:' +
             ((Highcharts.theme && Highcharts.theme.contrastTextColor) ||
-            'black') + '">{y}</span>' +
+            'white') + '">{y}</span>' +
             '<span style="font-size:12px;color:silver">%</span></div>',
           },
           tooltip: {
@@ -123,7 +122,7 @@ $(document).ready(function () {
           dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:25px;color:' +
             ((Highcharts.theme && Highcharts.theme.contrastTextColor) ||
-            'black') + '">{y:.1f}</span><br/>' +
+            'white') + '">{y:.1f}</span><br/>' +
             '<span style="font-size:12px;color:silver">MB</span></div>',
           },
           tooltip: {
@@ -150,7 +149,7 @@ $(document).ready(function () {
           dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:12px;color:' +
             ((Highcharts.theme && Highcharts.theme.contrastTextColor) ||
-            'black') + '">{y:.1f}</span><br/>' +
+            'white') + '">{y:.1f}</span><br/>' +
             '<span style="font-size:10px;color:silver">MB</span></div>',
           },
           tooltip: {
@@ -177,7 +176,7 @@ $(document).ready(function () {
           dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:12px;color:' +
             ((Highcharts.theme && Highcharts.theme.contrastTextColor) ||
-            'black') + '">{y:.1f}</span><br/>' +
+            'white') + '">{y:.1f}</span><br/>' +
             '<span style="font-size:10px;color:silver">MB</span></div>',
           },
           tooltip: {
@@ -204,7 +203,7 @@ $(document).ready(function () {
           dataLabels: {
             format: '<div style="text-align:center"><span style="font-size:12px;color:' +
             ((Highcharts.theme && Highcharts.theme.contrastTextColor) ||
-            'black') + '">{y:.1f}</span><br/>' +
+            'white') + '">{y:.1f}</span><br/>' +
             '<span style="font-size:10px;color:silver">MB</span></div>',
           },
           tooltip: {
