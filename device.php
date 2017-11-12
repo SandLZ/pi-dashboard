@@ -4,6 +4,8 @@
 * Copyright 2017 NXEZ.com.
 * Licensed under the GPL v3.0 license.
 */
+include 'ChromePhp.php';
+
 
 @header("content-Type: text/html; charset=utf-8");
 ob_start();
@@ -31,16 +33,15 @@ $D['os'] = explode(" ", php_uname());
 $D['home_temp'] = 0;
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
-    console.log($str);
+    ChromePhp::log($str);
     if (!empty($str)) {
         $D['home_temp'] = 2;
         $secondLine = explode('\n', $str);
-        console.log($secondLine);
+        ChromePhp::log($secondLine);
         if (!empty($secondLine) && count($secondLine) > 0) {
             $D['home_temp'] = 3;
             $temperatureData = explode(' ', $secondLine[1]);
-            console.log('温度数据');
-            console.log($temperatureData);
+            ChromePhp::log($temperatureData);
             if (!empty($temperatureData) && count($temperatureData)>9) {
                 $D['home_temp'] = 4;
                 $temperature = float($temperatureData[9]);
