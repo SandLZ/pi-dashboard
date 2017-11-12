@@ -39,7 +39,7 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
         if (count($str) > 0) {
             $D['home_temp'] = 3;
             $str = preg_split("/\s+/",$str[1]);
-            print_r($str);
+            ChromePhp::log($str);
             if (count($str)>9) {
                 $D['home_temp'] = 4;
                 $str = floatval(substr($str[10],2));
