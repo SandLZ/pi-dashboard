@@ -293,7 +293,8 @@ $(document).ready(function () {
   setInterval(function () {
 
     $.getJSON('?ajax=true', function (data) {
-
+      // 室温
+      $('#homeTemp').text(tempFormat(data.home_temp));
       //console.log(data);
       var newDate = new Date();
       newDate.setTime(parseInt(data.time) * 1000);
@@ -509,6 +510,10 @@ Date.prototype.format = function (format) {
   }
   return format;
 };
+
+function tempFormat(intTemp) {
+  return intTemp + '<span>&nbsp;&#176;C</span>';
+}
 
 function uptimeFormat(str) {
   var uptime = '';
