@@ -216,7 +216,7 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                             ?>
                             <div class="row" style="margin: 0;">
                                 <div class="col-md-10 col-sm-10 col-xs-10" style="padding: 0;">
-                                    <div id="container-net-interface-<?php echo($i+1) ?>" style="min-width: 100%; height: 150px; margin: 30 auto"></div>
+                                    <div id="container-net-interface-<?php echo($i+1) ?>" style="min-width: 100%; height: 150px; margin: 30px auto"></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
                                     <div style="height: 80px; margin-top: 30px;">

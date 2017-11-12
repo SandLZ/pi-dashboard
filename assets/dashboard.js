@@ -247,6 +247,9 @@ $(document).ready(function () {
   for (i = 0; i < init_vals.net.count; i++) {
     var chartNetInterface = Highcharts.chart(
       'container-net-interface-' + (i + 1), {
+        chart: {
+          backgroundColor: '#30343e'
+        },
         title: {
           text: '',
         },
