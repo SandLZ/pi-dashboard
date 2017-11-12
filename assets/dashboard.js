@@ -294,7 +294,9 @@ $(document).ready(function () {
 
     $.getJSON('?ajax=true', function (data) {
       // 室温
-      $('#homeTemp').text(tempFormat(data.home_temp));
+      if (data.hasOwnProperty('home_temp')) {
+        $('#homeTemp').innerHTML = tempFormat(data.home_temp);
+      }
       console.log(data);
       var newDate = new Date();
       newDate.setTime(parseInt(data.time) * 1000);
@@ -512,7 +514,7 @@ Date.prototype.format = function (format) {
 };
 
 function tempFormat(intTemp) {
-  return intTemp + '<span>&nbsp;&#176;C</span>';
+  return intTemp + '&nbsp;&#176;C';
 }
 
 function uptimeFormat(str) {
