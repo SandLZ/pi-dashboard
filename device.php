@@ -30,13 +30,19 @@ $D['os'] = explode(" ", php_uname());
 // DS18B20
 $D['home_temp'] = 0;
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
+    $D['home_temp'] = 1;
+    console.log($str);
     if (!empty($str)) {
+        $D['home_temp'] = 2;
         $secondLine = explode('\n', $str);
+        console.log($secondLine);
         if (!empty($secondLine) && count($secondLine) > 0) {
+            $D['home_temp'] = 3;
             $temperatureData = explode(' ', $secondLine[1]);
-            print_r('温度数据');
-            print_r($temperatureData);
+            console.log('温度数据');
+            console.log($temperatureData);
             if (!empty($temperatureData) && count($temperatureData)>9) {
+                $D['home_temp'] = 4;
                 $temperature = float($temperatureData[9]);
                 $temperature = $temperature / 1000;
                 $D['home_temp'] = $temperature;
