@@ -31,6 +31,7 @@ $D['os'] = explode(" ", php_uname());
 
 // DS18B20
 $D['home_temp'] = 0;
+$secondLine = [];
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
     if (!empty($str)) {
