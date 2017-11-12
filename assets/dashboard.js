@@ -17,6 +17,7 @@ $(document).ready(function () {
       },
     },
   });
+  Highcharts.theme.contrastTextColor = 'white';
 
   var gaugeOptions = {
 
@@ -215,6 +216,7 @@ $(document).ready(function () {
 
   var chartDisk = Highcharts.chart('container-disk',
     Highcharts.merge(gaugeOptions, {
+
       yAxis: {
         min: 0,
         max: init_vals.disk.total,
@@ -297,7 +299,7 @@ $(document).ready(function () {
       if (data.hasOwnProperty('home_temp')) {
         $('#homeTemp').html(tempFormat(data.home_temp));
       }
-      console.log(data);
+      // console.log(data);
       var newDate = new Date();
       newDate.setTime(parseInt(data.time) * 1000);
 
