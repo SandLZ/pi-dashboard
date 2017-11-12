@@ -152,12 +152,12 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-cache" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CEFFFF;"><strong><small>CACHE</small></strong></div>
+                            <div class="row right-bottom-boder blue" style="margin: 0; ">
+                                <div class="text-center" style="padding: 2px 0 2px 0;"><strong><small>CACHE</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-cache-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CEFFFF;border-bottom-right-radius:10px">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;border-bottom-right-radius:10px">
                                     <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-buffers">0</span>MB<br /><small class="label">BUFFERS</small></div>
                                 </div>
                             </div>
@@ -166,12 +166,12 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div id="container-mem-real" style="width: 100%; height: 100px;"></div>
                         <div style="height: 90px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CDFD9F;"><strong><small>REAL MEMORY</small></strong></div>
+                            <div class="row right-bottom-boder grey-blue-theme" style="margin: 0; ">
+                                <div class="text-center" style="padding: 2px 0 2px 0;"><strong><small>REAL MEMORY</small></strong></div>
                                 <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;">
                                     <div class="text-center" style="padding: 10px 0 10px 0;"><span id="mem-real-percent">0</span>%<br /><small class="label">USED</small></div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0; background-color:#CDFD9F;border-bottom-right-radius:10px">
+                                <div class="col-md-6 col-sm-6 col-xs-6" style="padding: 0;border-bottom-right-radius:10px">
                                     <div class="text-center" style="padding: 10px 0 10px 0;border-bottom-right-radius:10px"><span id="mem-real-free">0</span>MB<br /><small class="label">FREE</small></div>
                                 </div>
                             </div>
