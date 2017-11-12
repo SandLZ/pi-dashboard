@@ -38,13 +38,12 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
         $D['home_temp'] = 2;
         $secondLine = explode('\n', $str);
         ChromePhp::log($secondLine);
-        ChromePhp::log(!empty($secondLine));
         ChromePhp::log(count($secondLine));
-        if (!empty($secondLine) && count($secondLine) > 0) {
+        if (count($secondLine) > 0) {
             $D['home_temp'] = 3;
             $temperatureData = explode(' ', $secondLine[1]);
             ChromePhp::log($temperatureData);
-            if (!empty($temperatureData) && count($temperatureData)>9) {
+            if (count($temperatureData)>9) {
                 $D['home_temp'] = 4;
                 $temperature = float($temperatureData[9]);
                 $temperature = $temperature / 1000;
