@@ -31,6 +31,25 @@ $D['os'] = explode(" ", php_uname());
 
 // DS18B20
 $D['home_temp'] = 0;
+if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
+    $D['home_temp'] = 1;
+    if (!empty($str)) {
+        $D['home_temp'] = 2;
+        if (count($str) > 0) {
+            $D['home_temp'] = 3;
+            $str = preg_split("/\s+/",$str[1]);
+            if (count($str)>9) {
+                $D['home_temp'] = 4;
+                $str = floatval(substr($str[9],2));
+                $str = $str / 1000;
+                $D['home_temp'] = round($str);
+            }
+        }
+    }
+
+} else {
+    $D['home_temp'] = 0;
+}
 if (($str = @file("/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq")) !== false) {
     $D['cpu']['freq'] = $str[0];
 } else {
