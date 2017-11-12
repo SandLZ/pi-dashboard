@@ -35,15 +35,16 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
     if (!empty($str)) {
         $D['home_temp'] = 2;
-        $str = explode('\n', $str);
+        $str = preg_split('/[;\r\n]+/s', $str);
         if (count($str) > 0) {
             $D['home_temp'] = 3;
-            $str = explode(' ', $str[1]);
-            ChromePhp::log($str);
+            $str = preg_split("/\s+/",$str[1]);
+            print_r($str);
             if (count($str)>9) {
                 $D['home_temp'] = 4;
-                $str = float($str[9]);
+                $str = floatval(substr($str[10],2));
                 $str = $str / 1000;
+                print_r($str);
                 $D['home_temp'] = $str;
             }
         }
