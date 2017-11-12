@@ -80,37 +80,37 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
                     <div class="col-md-6 col-sm-6">
                         <div id="container-cpu" style="width: 100%; height: 200px;"></div>
                         <div style="height: 200px;">
-                            <div class="row right-bottom-boder" style="margin: 0; background-color:#E0E0E0;">
-                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #CDFD9F;"><strong><small>CPU</small></strong></div>
+                            <div class="row right-bottom-boder" style="margin: 0; background-color:#30343e;">
+                                <div class="text-center" style="padding: 2px 0 2px 0; background-color: #29292F;"><strong><small>CPU</small></strong></div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#FFFECD;"><span id="cpu-freq" style="font-weight: bolder;"><?php echo($D['cpu']['freq']/1000) ?></span><br /><small class="label">MHz</small></div>
-                                </div>
-                                <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0;"><span id="cpu-count"><?php echo($D['cpu']['count']) ?></span><br /><small class="label">CORE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-freq" style="font-weight: bolder;color: white"><?php echo($D['cpu']['freq']/1000) ?></span><br /><small class="label">MHz</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#FDCCCB;"><span id="cpu-temp" style="font-weight: bolder;">0</span><br /><small class="label">C°</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0;color: white"><span id="cpu-count"><?php echo($D['cpu']['count']) ?></span><br /><small class="label">CORE</small></div>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-idl">0</span>%<br /><small class="label">IDEL</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-temp" style="font-weight: bolder;color: white">0</span><br /><small class="label">C°</small></div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 0;">
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-idl" style="color: white;">0</span>%<br /><small class="label">IDEL</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-use">0</span>%<br /><small class="label">USER</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-use">0</span>%<br /><small class="label">USER</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-sys">0</span>%<br /><small class="label">SYS</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-sys">0</span>%<br /><small class="label">SYS</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-nic">0</span>%<br /><small class="label">NICE</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-nic">0</span>%<br /><small class="label">NICE</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-iow">0</span>%<br /><small class="label">IOW</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-iow">0</span>%<br /><small class="label">IOW</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-irq">0</span>%<br /><small class="label">IRQ</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-irq">0</span>%<br /><small class="label">IRQ</small></div>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-xs-2" style="padding: 0;">
-                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#9BCEFD;"><span id="cpu-stat-sirq">0</span>%<br /><small class="label">SIRQ</small></div>
+                                    <div class="text-center" style="padding: 10px 0 10px 0; background-color:#30343e;"><span id="cpu-stat-sirq">0</span>%<br /><small class="label">SIRQ</small></div>
                                 </div>
                                 <div class="col-md-12" style="min-height: 52px;">
                                     <div class="text-center" style="padding: 10px 0 10px 0; margin: auto 0;"><span id="cpu-model" class="label"><?php echo($D['cpu']['model']) ?></span>&nbsp;</div>
