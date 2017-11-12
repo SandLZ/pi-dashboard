@@ -295,7 +295,7 @@ $(document).ready(function () {
     $.getJSON('?ajax=true', function (data) {
       // 室温
       if (data.hasOwnProperty('home_temp')) {
-        $('#homeTemp').html(tempFormat(data.home_temp));
+        $('#homeTemp').text(tempFormat(data.home_temp));
       }
       console.log(data);
       var newDate = new Date();
