@@ -35,7 +35,7 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
     if (!empty($str)) {
         $D['home_temp'] = 2;
-        $str = preg_split('/[;\r\n]+/s', $str);
+        $str = preg_split('/[\n]+/s', $str);
         if (count($str) > 0) {
             $D['home_temp'] = 3;
             ChromePhp::log($str);
