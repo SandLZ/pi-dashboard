@@ -249,6 +249,6 @@ require_once(dirname(__FILE__) . DIRECTORY_SEPARATOR . 'device.php');
         </div>
     </div>
 </div>
-<script src="assets/dashboard.min.js"></script>
+<script src="assets/dashboard.js"></script>
 </body>
 </html>
