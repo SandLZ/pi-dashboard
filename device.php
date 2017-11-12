@@ -27,6 +27,20 @@ $D['yourip'] = $_SERVER['REMOTE_ADDR'];
 $D['uname'] = @php_uname();
 $D['os'] = explode(" ", php_uname());
 
+// DS18B20
+$D['home_temp'] = 0;
+if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false){
+    $econdLine =  explode('\n', $str)[1];
+    $temperatureData = explode(' ', $econdLine)[9];
+    $temperature = float($temperatureData);
+    $temperature = $temperature / 1000;
+    $D['home_temp'] = $temperature;
+}
+else{
+    $D['cpu']['freq'] = 0;
+}
+
+
 if (($str = @file("/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq")) !== false){
     $D['cpu']['freq'] = $str[0];
 }
