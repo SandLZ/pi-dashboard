@@ -38,6 +38,7 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
         $str = preg_split('/[;\r\n]+/s', $str);
         if (count($str) > 0) {
             $D['home_temp'] = 3;
+            ChromePhp::log($str);
             $str = preg_split("/\s+/",$str[1]);
             ChromePhp::log($str);
             if (count($str)>9) {
