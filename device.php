@@ -30,8 +30,29 @@ $D['uname'] = @php_uname();
 $D['os'] = explode(" ", php_uname());
 
 // DS18B20
+$D['box_temp'] = 0;
+// DS18B20 -2
 $D['home_temp'] = 0;
 if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
+    $D['box_temp'] = 1;
+    if (!empty($str)) {
+        $D['box_temp'] = 2;
+        if (count($str) > 0) {
+            $D['box_temp'] = 3;
+            $str = preg_split("/\s+/",$str[1]);
+            if (count($str)>9) {
+                $D['box_temp'] = 4;
+                $str = floatval(substr($str[9],2));
+                $str = $str / 1000;
+                $D['box_temp'] = round($str);
+            }
+        }
+    }
+
+} else {
+    $D['home_temp'] = 0;
+}
+if (($str = @file("/sys/bus/w1/devices/28-041702b05cff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
     if (!empty($str)) {
         $D['home_temp'] = 2;
@@ -189,6 +210,25 @@ function get_info()
     }
 
     if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
+        $D['box_temp'] = 1;
+        if (!empty($str)) {
+            $D['box_temp'] = 2;
+            if (count($str) > 0) {
+                $D['box_temp'] = 3;
+                $str = preg_split("/\s+/",$str[1]);
+                if (count($str)>9) {
+                    $D['box_temp'] = 4;
+                    $str = floatval(substr($str[9],2));
+                    $str = $str / 1000;
+                    $D['box_temp'] = round($str);
+                }
+            }
+        }
+
+    } else {
+        $D['box_temp'] = 0;
+    }
+    if (($str = @file("/sys/bus/w1/devices/28-041702b05cff/w1_slave")) !== false) {
         $D['home_temp'] = 1;
         if (!empty($str)) {
             $D['home_temp'] = 2;

@@ -297,6 +297,10 @@ $(document).ready(function () {
   setInterval(function () {
 
     $.getJSON('?ajax=true', function (data) {
+      // 盒子
+      if (data.hasOwnProperty('box_temp')) {
+        $('#boxTemp').html(tempFormat(data.box_temp));
+      }
       // 室温
       if (data.hasOwnProperty('home_temp')) {
         $('#homeTemp').html(tempFormat(data.home_temp));
