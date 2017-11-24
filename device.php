@@ -50,7 +50,7 @@ if (($str = @file("/sys/bus/w1/devices/28-041682b3fbff/w1_slave")) !== false) {
     }
 
 } else {
-    $D['home_temp'] = 0;
+    $D['box_temp'] = 0;
 }
 if (($str = @file("/sys/bus/w1/devices/28-041702b05cff/w1_slave")) !== false) {
     $D['home_temp'] = 1;
